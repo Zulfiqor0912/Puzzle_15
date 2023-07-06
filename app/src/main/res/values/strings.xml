@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">15Stones</string>
+    <string name="PP">https://www.freeprivacypolicy.com/live/e74d065a-67b3-4825-857c-b4a15ebd9737</string>
+    <string name="settings">Settings</string>
+    <string name="new_game">New game</string>
+    <string name="about">About</string>
+    <string name="quit">Quit</string>
+    <string name="new_game_land">New game</string>
+    <string name="continue_land">Continue</string>
+    <string name="about_land">About</string>
+    <string name="quit_land">Quit</string>
+    <string name="pause">PAUSE</string>
+    <string name="_0">0</string>
+    <string name="moves">MOVES</string>
+    <string name="information">Bu dastur GITA da tahsil olayotgan Rustamov Zulfiqor tomonidan kursning 4 - darsida uyga vazifa sifatida ishlab chiqarilgan. Xato va kamchiliklar bo\'lsa izohlarda o\'z fikringizni qoldiring</string>
+
+    <style name="lilit">
+        <item name="fontFamily">@raw/lilit</item>
+    </style>
+
+    <style name="stone">
+        <item name="fontFamily">@raw/stone</item>
+    </style>
+
+</resources>

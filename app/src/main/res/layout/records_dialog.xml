@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/firstRecordImage"
+            android:layout_width="136dp"
+            android:layout_height="56dp"
+            android:layout_marginVertical="6dp"
+            app:layout_constraintHorizontal_bias="0.15"
+            android:background="@drawable/records_back"
+            app:layout_constraintBottom_toTopOf="@id/secondRecordImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/firsRecordNumberBack"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/firstRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@raw/lilit"
+            android:text=". . ."
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@id/firstRecordImage"
+            app:layout_constraintEnd_toEndOf="@id/firstRecordImage"
+            app:layout_constraintStart_toStartOf="@id/firstRecordImage"
+            app:layout_constraintTop_toTopOf="@id/firstRecordImage"
+            app:layout_constraintVertical_bias="0.55" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            app:layout_constraintHorizontal_bias="0.3"
+            android:id="@+id/firsRecordNumberBack"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/firs_record_number_back"
+            app:layout_constraintBottom_toBottomOf="@id/firstRecordImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/firstRecordImage" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            app:layout_constraintHorizontal_bias="0.3"
+            android:id="@+id/secondRecordNumberBack"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/two_record_number_back"
+            app:layout_constraintBottom_toBottomOf="@id/secondRecordImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/secondRecordImage" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/secondRecordImage"
+            android:layout_width="136dp"
+            android:layout_height="56dp"
+            android:layout_marginVertical="6dp"
+            app:layout_constraintHorizontal_bias="0.15"
+            android:background="@drawable/records_back"
+            app:layout_constraintBottom_toTopOf="@id/thirdRecordImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/secondRecordNumberBack"
+            app:layout_constraintTop_toBottomOf="@id/firstRecordImage" />
+
+        <TextView
+            android:id="@+id/secondRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@raw/lilit"
+            android:text=". . ."
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@id/secondRecordImage"
+            app:layout_constraintEnd_toEndOf="@id/secondRecordImage"
+            app:layout_constraintStart_toStartOf="@id/secondRecordImage"
+            app:layout_constraintTop_toTopOf="@id/secondRecordImage"
+            app:layout_constraintVertical_bias="0.55" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            app:layout_constraintHorizontal_bias="0.3"
+            android:id="@+id/thirdRecordNumberBack"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/third_record_number_back"
+            app:layout_constraintBottom_toBottomOf="@id/thirdRecordImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/thirdRecordImage" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/thirdRecordImage"
+            android:layout_width="136dp"
+            android:layout_height="56dp"
+            android:layout_marginVertical="6dp"
+            app:layout_constraintHorizontal_bias="0.15"
+            android:background="@drawable/records_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/thirdRecordNumberBack"
+            app:layout_constraintTop_toBottomOf="@id/secondRecordImage" />
+
+        <TextView
+            android:id="@+id/thirdRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@raw/lilit"
+            android:text=". . ."
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@id/thirdRecordImage"
+            app:layout_constraintEnd_toEndOf="@id/thirdRecordImage"
+            app:layout_constraintStart_toStartOf="@id/thirdRecordImage"
+            app:layout_constraintTop_toTopOf="@id/thirdRecordImage"
+            app:layout_constraintVertical_bias="0.55" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="118dp"
+        android:layout_height="55dp"
+        android:background="@drawable/btn_close"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/btnBackRecord"
+        app:layout_constraintEnd_toEndOf="@id/btnBackRecord"
+        app:layout_constraintStart_toStartOf="@id/btnBackRecord"
+        app:layout_constraintTop_toTopOf="@id/btnBackRecord" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnBackRecord"
+        android:layout_width="123dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_btn_close"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

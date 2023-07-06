@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="10dp">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="52dp"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="you_win.json" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_new_game"
+        app:layout_constraintBottom_toBottomOf="@id/winNewGameBtn"
+        app:layout_constraintEnd_toEndOf="@id/winNewGameBtn"
+        app:layout_constraintStart_toStartOf="@id/winNewGameBtn"
+        app:layout_constraintTop_toTopOf="@id/winNewGameBtn"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/winNewGameBtn"
+        android:layout_width="115dp"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_btn_new_game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/winQuitBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_quit_game"
+        app:layout_constraintBottom_toBottomOf="@id/winQuitBtn"
+        app:layout_constraintEnd_toEndOf="@id/winQuitBtn"
+        app:layout_constraintStart_toStartOf="@id/winQuitBtn"
+        app:layout_constraintTop_toTopOf="@id/winQuitBtn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/winQuitBtn"
+        android:layout_width="115dp"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_btn_quit_game"
+        app:layout_constraintBottom_toBottomOf="@id/winNewGameBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/winNewGameBtn"
+        app:layout_constraintTop_toTopOf="@+id/winNewGameBtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

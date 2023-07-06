@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="300dp"
+    android:layout_gravity="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="350dp"
+        android:layout_height="220dp"
+        android:background="@drawable/pause"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/musicLiner"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/aa"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/soundLiner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/musicOff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_music_off_24"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/onMusic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+
+                android:src="@drawable/ic_baseline_music_note_24" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/soundLiner"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/aa"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="3dp"
+            app:layout_constraintBottom_toBottomOf="@id/musicLiner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/musicLiner"
+            app:layout_constraintTop_toTopOf="@id/musicLiner"
+            app:layout_constraintVertical_bias="0.3">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/soundOff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_volume_off_24"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/soundOn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_volume_up_24" />
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatButton"
+        android:layout_width="128dp"
+        android:layout_height="42dp"
+        android:background="@drawable/btn_new_game"
+        app:layout_constraintBottom_toBottomOf="@+id/pauseNewGame"
+        app:layout_constraintEnd_toEndOf="@+id/pauseNewGame"
+        app:layout_constraintStart_toStartOf="@+id/pauseNewGame"
+        app:layout_constraintTop_toTopOf="@+id/pauseNewGame" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/pauseNewGame"
+        android:layout_width="133dp"
+        android:layout_height="47dp"
+        android:background="@drawable/bg_btn_new_game"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="110dp"
+        android:layout_height="42dp"
+        android:background="@drawable/btn_continue_game"
+        app:layout_constraintBottom_toBottomOf="@id/pauseResume"
+        app:layout_constraintEnd_toEndOf="@id/pauseResume"
+        app:layout_constraintStart_toStartOf="@id/pauseResume"
+        app:layout_constraintTop_toTopOf="@id/pauseResume" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/pauseResume"
+        android:layout_width="115dp"
+        android:layout_height="47dp"
+        android:background="@drawable/bg_continue_game"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatButton2"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toEndOf="@+id/pauseQuit"
+        app:layout_constraintTop_toTopOf="@+id/pauseQuit" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatButton2"
+        android:layout_width="110dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_quit_game"
+        app:layout_constraintTop_toTopOf="@id/pauseQuit"
+        app:layout_constraintBottom_toBottomOf="@id/pauseQuit"
+        app:layout_constraintStart_toStartOf="@id/pauseQuit"
+        app:layout_constraintEnd_toEndOf="@id/pauseQuit"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/pauseQuit"
+        android:layout_width="115dp"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_btn_quit_game"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toStartOf="@id/pauseResume"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

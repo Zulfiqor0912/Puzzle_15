@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView3"
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:background="@drawable/btn_new_game"
+        app:layout_constraintBottom_toBottomOf="@id/newGame"
+        app:layout_constraintEnd_toEndOf="@id/newGame"
+        app:layout_constraintStart_toStartOf="@id/newGame"
+        app:layout_constraintTop_toTopOf="@id/newGame" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/newGame"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_btn_new_game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/continue1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/puzzleLogo_land"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView4"
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:background="@drawable/btn_continue_game"
+        app:layout_constraintBottom_toBottomOf="@id/continue1"
+        app:layout_constraintEnd_toEndOf="@id/continue1"
+        app:layout_constraintStart_toStartOf="@id/continue1"
+        app:layout_constraintTop_toTopOf="@id/continue1" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/continue1"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_continue_game"
+        app:layout_constraintEnd_toStartOf="@id/records"
+        app:layout_constraintStart_toEndOf="@+id/newGame"
+        app:layout_constraintTop_toTopOf="@id/newGame" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:background="@drawable/btn_record_game"
+        app:layout_constraintBottom_toBottomOf="@id/records"
+        app:layout_constraintEnd_toEndOf="@id/records"
+        app:layout_constraintStart_toStartOf="@id/records"
+        app:layout_constraintTop_toTopOf="@id/records" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/records"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_btn_record_game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/continue1"
+        app:layout_constraintTop_toTopOf="@+id/continue1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView5"
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:background="@drawable/btn_about_game"
+        app:layout_constraintBottom_toBottomOf="@id/about"
+        app:layout_constraintEnd_toEndOf="@id/about"
+        app:layout_constraintStart_toStartOf="@id/about"
+        app:layout_constraintTop_toTopOf="@id/about" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/about"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_btn_about_game"
+        app:layout_constraintEnd_toStartOf="@id/exit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/records" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="175dp"
+        android:layout_height="55dp"
+        android:background="@drawable/btn_quit_game"
+        app:layout_constraintBottom_toBottomOf="@id/exit"
+        app:layout_constraintEnd_toEndOf="@id/exit"
+        app:layout_constraintStart_toStartOf="@id/exit"
+        app:layout_constraintTop_toTopOf="@id/exit" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/exit"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_btn_quit_game"
+        app:layout_constraintBottom_toBottomOf="@+id/about"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/about"
+        app:layout_constraintTop_toTopOf="@+id/appCompatImageView5" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/puzzleLogo_land"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:background="@drawable/puzzle_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="@id/puzzleLogo_land"
+        app:layout_constraintEnd_toEndOf="@id/puzzleLogo_land"
+        app:layout_constraintStart_toStartOf="@id/puzzleLogo_land"
+        app:layout_constraintTop_toTopOf="@id/puzzleLogo_land" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
